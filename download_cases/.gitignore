@@ -1,0 +1,3 @@
+build/
+*.pyc
+download_cases/google-cloud-storage-credentials.json
