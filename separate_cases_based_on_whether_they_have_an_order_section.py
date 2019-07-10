@@ -24,7 +24,7 @@ def separate_cases_based_on_whether_they_only_have_a_remand_section(base_path, e
         with open(path_to_file, 'r', encoding='utf-8') as infile:
             case_text = infile.read()
 
-            if re.findall('(\sORDERS?\s)', case_text):
+            if re.findall('(\n\s*ORDERS?\s*\n)', case_text):
                 path_to_output_file = os.path.join(path_to_where_cases_with_an_order_section_should_go, filename)
                 copyfile(path_to_file, path_to_output_file)
             else:
