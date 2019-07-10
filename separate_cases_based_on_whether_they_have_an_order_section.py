@@ -40,10 +40,10 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Separate the case files based on whether they only have a remand '
                                                  'section or not.')
     parser.add_argument('--base_path', type=str,
-                        help='the path to the parent folder of the folder containing the input images')
+                        help='the path to the parent folder of the folder containing the input case files')
     parser.add_argument('--every_nth_case', type=int,
-                        help='If not specified, the program will only consider every 1000th case, which is useful'
-                             ' for testing.')
+                        help='If not specified, the program will only consider every 1000th case, which is '
+                             'useful for testing.')
 
     args = parser.parse_args()
     base_path = args.base_path if args.base_path else 'C:\\Users\\Nathan\\Desktop'
