@@ -6,9 +6,9 @@ from shutil import copyfile
 
 def separate_cases_based_on_whether_they_only_have_a_remand_section(base_path, every_nth_case):
     path_to_input_cases = os.path.join(base_path, '02 case files converted to utf-8')
-    base_path_for_output = os.path.join(base_path, '03 case files separated based on whether they only have a remand section')
-    path_to_where_cases_with_an_order_section_should_go = os.path.join(base_path_for_output, 'has an order section')
-    path_to_where_cases_without_an_order_section_should_go = os.path.join(base_path_for_output, 'only has a remand section')
+    base_path_for_output = os.path.join(base_path, '03 case files separated based on whether they have an ORDER section')
+    path_to_where_cases_with_an_order_section_should_go = os.path.join(base_path_for_output, 'has an ORDER section')
+    path_to_where_cases_without_an_order_section_should_go = os.path.join(base_path_for_output, 'does not have an ORDER section')
 
     for path in [path_to_where_cases_with_an_order_section_should_go, path_to_where_cases_without_an_order_section_should_go]:
         if not os.path.exists(path):
