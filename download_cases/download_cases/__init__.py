@@ -1,4 +1,5 @@
-# Code from https://medium.com/@rutger_93697/i-thought-this-solution-was-somewhat-complex-3e8bc91f83f8
+# Code from:
+# https://medium.com/@rutger_93697/i-thought-this-solution-was-somewhat-complex-3e8bc91f83f8
 
 import os
 import json

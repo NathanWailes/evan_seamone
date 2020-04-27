@@ -1,6 +1,6 @@
 import os
 
-path_to_cases = 'C:\\Users\\Nathan\\Desktop\\full'
+path_to_cases = 'C:\\Users\\<Username>>\\Desktop\\full'
 
 cases_we_didnt_find_the_order_section_for = []
 

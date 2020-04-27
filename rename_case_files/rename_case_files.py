@@ -1,7 +1,7 @@
 import os
 import re
 
-base_directory = "C:\\Users\\Nathan\\Dropbox\\business\\2019\\Evan Seamone\\nathan-wailes-upwork-evan-seamone\\full"
+base_directory = "C:\\Users\\<Username>\\Desktop\\full"
 file_names = os.listdir(base_directory)
 
 for file_name in file_names:
@@ -17,7 +17,8 @@ for file_name in file_names:
 
         # (?<=Citation Nr: )(\d+)
         # Citation Nr: (\d+)
-        citation_number_matches = re.match('Citation Nr: (\d+)', file_contents_as_a_string)
+        citation_number_matches = re.match('Citation Nr: (\d+)',
+                                           file_contents_as_a_string)
         citation_number = citation_number_matches[1]
         print(citation_number)
 
